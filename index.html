@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Masak Apa Hari Ini? Acak Menu dan Resep Simpel | Masak Apa Ya</title>
+<meta name="description" content="Bingung masak apa hari ini? Pilih waktu makan dan bahan, tekan satu tombol, dapat menu dan resep simpel dengan bahan dapur sehari-hari.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+<!-- Setelah disetujui AdSense, tempel kode <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX" crossorigin="anonymous"></script> di sini -->
+<link rel="stylesheet" href="css/theme.css"></head><body class="home">
+<nav class="nav"><a href="#home" class="on">Home</a><a href="#acak">Acak menu</a><a href="#resep">Resep</a><a href="tentang.html">Tentang</a></nav>
+<div class="loader" id="ld"><div class="rcpt"><p>MASAK APA YA</p><p>Dapur rumah, buka setiap hari</p><hr><small><span>Bumbu dasar</span><span>siap</span></small><small><span>Bahan di kulkas</span><span>cek</span></small><hr><b id="pc">0</b><p>Menyiapkan dapur</p></div></div>
+<canvas id="gl"></canvas><div class="cur" id="cur"></div>
+<section class="chap" id="home"><div class="pin">
+<div class="ch" data-i="0"><h1 data-s>Hari ini masak apa?</h1><p class="fade">Pertanyaan yang kita tanyakan setiap hari. Biar kami yang jawab.</p></div>
+<div class="ch" data-i="1"><h2 data-s>Bingung dari pagi sampai malam?</h2><p class="fade">Pilih waktu makan dan bahan yang ada di dapur.</p></div>
+<div class="ch" data-i="2"><h2 data-s>Tekan satu tombol, menu keluar.</h2><a class="btn mag fade" href="#acak">Acak menu sekarang</a></div>
+<div class="hud"><i id="pg"></i></div></div></section>
+<div class="marq" aria-hidden="true"><div>Sarapan &nbsp; Makan siang &nbsp; Makan malam &nbsp; Hemat &nbsp; Cepat &nbsp; Tanpa ribet &nbsp; Sarapan &nbsp; Makan siang &nbsp; Makan malam &nbsp; Hemat &nbsp; Cepat &nbsp; Tanpa ribet &nbsp;</div></div>
+<div class="sheet"><main class="wrap" id="acak">
+<section class="calc" aria-labelledby="jh"><h2 id="jh">Acak menu hari ini</h2>
+<div>
+<label id="l1">Kapan makannya?</label><div class="chips" id="c1" role="group" aria-labelledby="l1"><button class="on" data-v="x">Kapan saja</button><button data-v="s">Sarapan</button><button data-v="l">Makan siang</button><button data-v="m">Makan malam</button></div>
+<label id="l2">Punya bahan apa?</label><div class="chips" id="c2" role="group" aria-labelledby="l2"><button class="on" data-v="x">Apa saja</button><button data-v="ayam">Ayam</button><button data-v="telur">Telur</button><button data-v="tahutempe">Tahu dan tempe</button><button data-v="ikan">Ikan</button><button data-v="sayur">Sayur</button></div>
+<button class="btn mag" id="go" type="button" style="margin-top:26px">Acak menu</button><p class="note" id="msg" style="margin-top:10px"></p>
+</div>
+<div class="res" id="res" aria-live="polite"><h3 id="rn"></h3><div class="meta" id="rm"></div><div><b>Bahan</b><ul id="ri"></ul></div><div><b>Cara masak</b><ol id="rs"></ol></div><div class="ba"><button class="btn" id="anim" type="button">Buka buku resep</button><button class="btn" id="salin" type="button" style="background:var(--ink)">Salin resep</button></div></div>
+</section>
+<div class="ad" role="complementary" aria-label="Iklan">Slot iklan</div></main></div>
+
+<section class="dark" id="kisah"><div class="dpin"><p class="stmt">Setiap hari orang bingung mau masak apa. Padahal jawabannya sering sudah ada di dapur: telur, tempe, sayur, dan sedikit bumbu.</p></div></section>
+
+<section class="hz" id="resep"><div class="hpin"><h2>Menu yang bisa kamu masak sekarang</h2><div class="track" id="trk"></div></div></section>
+
+<div class="sheet" id="panduan"><div class="wrap"><article>
+<h2>Cara pakai dalam tiga langkah</h2>
+<div class="story"><div class="sv"><div class="em" id="sb"></div><div class="sn" id="sl"></div></div>
+<div class="steps">
+<div class="st"><h3>Pilih waktu makan</h3><p>Sarapan, makan siang, atau makan malam. Menu sarapan biasanya cepat dan ringan, menu malam lebih mengenyangkan.</p></div>
+<div class="st"><h3>Pilih bahan yang ada</h3><p>Cek kulkas dulu. Ayam, telur, tahu dan tempe, ikan, atau sayur. Kalau belum yakin, biarkan di pilihan apa saja.</p></div>
+<div class="st"><h3>Tekan acak menu</h3><p>Menu muncul lengkap dengan bahan dan cara masaknya. Kalau kurang cocok, tekan lagi sampai ketemu yang pas.</p></div>
+</div></div>
+<h2>Tips supaya masak harian tidak membosankan</h2>
+<ul><li>Siapkan bumbu dasar seperti bawang merah, bawang putih, dan cabai. Hampir semua menu di sini memakainya.</li><li>Gantian jenis lauk dalam seminggu: ayam, telur, tahu dan tempe, ikan. Gizi lebih seimbang dan belanja lebih hemat.</li><li>Tambahkan sayur di setiap makan, walau hanya tumis kangkung atau sayur bening.</li><li>Pilih menu di bawah 20 menit untuk hari yang sibuk.</li></ul>
+<div class="ad" role="complementary" aria-label="Iklan">Slot iklan</div>
+<h2>Semua resep</h2>
+<details><summary>Telur dadar bawang <small>(10 menit)</small></summary><p><b>Bahan:</b> 2 telur, 1 bawang merah, iris, 1 batang daun bawang, iris, garam, minyak.</p><ol><li>Kocok telur dengan bawang, daun bawang, dan garam.</li><li>Panaskan sedikit minyak di wajan.</li><li>Tuang telur, masak sampai kecokelatan di kedua sisi.</li></ol></details><details><summary>Nasi goreng sederhana <small>(15 menit)</small></summary><p><b>Bahan:</b> 1 piring nasi, 2 bawang putih, 2 bawang merah, 1 telur, 1 sdm kecap manis, garam, minyak.</p><ol><li>Tumis bawang putih dan bawang merah sampai harum.</li><li>Masukkan telur, orak-arik.</li><li>Tambahkan nasi, kecap, dan garam, aduk sampai rata.</li></ol></details><details><summary>Tempe orek <small>(20 menit)</small></summary><p><b>Bahan:</b> 200 g tempe, potong dadu, 3 bawang merah, 2 bawang putih, 2 cabai, 2 sdm kecap manis, garam, gula.</p><ol><li>Goreng tempe sebentar sampai agak kering.</li><li>Tumis irisan bumbu sampai harum.</li><li>Masukkan tempe dan kecap, masak sampai bumbu meresap.</li></ol></details><details><summary>Tumis kangkung <small>(10 menit)</small></summary><p><b>Bahan:</b> 1 ikat kangkung, 3 bawang putih, 2 cabai, 1 sdm saus tiram, garam.</p><ol><li>Tumis bawang putih dan cabai sampai harum.</li><li>Masukkan kangkung, aduk cepat.</li><li>Tambahkan saus tiram dan garam, angkat saat masih hijau.</li></ol></details><details><summary>Ayam goreng bumbu kuning <small>(40 menit)</small></summary><p><b>Bahan:</b> 4 potong ayam, 4 bawang putih, 1 ruas kunyit, 1 sdt ketumbar, garam, 300 ml air, minyak.</p><ol><li>Haluskan bawang putih, kunyit, ketumbar, dan garam.</li><li>Ungkep ayam dengan bumbu dan air sekitar 20 menit sampai air menyusut.</li><li>Goreng sampai kuning kecokelatan.</li></ol></details><details><summary>Sup ayam sederhana <small>(30 menit)</small></summary><p><b>Bahan:</b> 300 g ayam, 1 wortel, 1 kentang, 3 bawang putih, 1 batang daun bawang, garam, merica, 1 liter air.</p><ol><li>Rebus ayam dengan bawang putih sampai matang.</li><li>Masukkan wortel dan kentang, masak sampai empuk.</li><li>Beri garam, merica, dan daun bawang.</li></ol></details><details><summary>Ikan goreng kunyit <small>(20 menit)</small></summary><p><b>Bahan:</b> 2 potong ikan, 1 jeruk nipis, 1 sdt kunyit bubuk, garam, minyak.</p><ol><li>Lumuri ikan dengan jeruk nipis, kunyit, dan garam.</li><li>Diamkan 10 menit.</li><li>Goreng sampai kering di kedua sisi.</li></ol></details><details><summary>Telur balado <small>(20 menit)</small></summary><p><b>Bahan:</b> 4 telur rebus, 5 cabai merah, 3 bawang merah, 2 bawang putih, 1 tomat, garam, gula.</p><ol><li>Goreng telur rebus sebentar.</li><li>Haluskan cabai, bawang, dan tomat, lalu tumis sampai matang.</li><li>Masukkan telur, beri garam dan gula, aduk rata.</li></ol></details><details><summary>Oseng tahu <small>(15 menit)</small></summary><p><b>Bahan:</b> 3 potong tahu, 2 bawang putih, 2 cabai, 1 sdm kecap manis, 1 batang daun bawang, garam.</p><ol><li>Potong tahu dadu dan goreng sebentar.</li><li>Tumis bawang putih dan cabai.</li><li>Masukkan tahu, kecap, garam, dan daun bawang.</li></ol></details><details><summary>Sayur bening bayam <small>(15 menit)</small></summary><p><b>Bahan:</b> 1 ikat bayam, 1 jagung manis, serut, 2 bawang putih, 2 bawang merah, garam, gula, 700 ml air.</p><ol><li>Didihkan air dengan irisan bawang dan jagung.</li><li>Beri garam dan gula.</li><li>Masukkan bayam, masak 2 menit lalu angkat.</li></ol></details><details><summary>Ayam kecap <small>(30 menit)</small></summary><p><b>Bahan:</b> 300 g ayam, 3 bawang merah, 2 bawang putih, 1 ruas jahe, 3 sdm kecap manis, 100 ml air, garam.</p><ol><li>Tumis bawang dan jahe sampai harum.</li><li>Masukkan ayam, aduk sampai berubah warna.</li><li>Tambahkan kecap dan air, masak sampai bumbu mengental.</li></ol></details><details><summary>Capcay sayur <small>(20 menit)</small></summary><p><b>Bahan:</b> 1 wortel, segenggam kol, 1 ikat sawi, 3 bawang putih, 1 sdm saus tiram, garam, 100 ml air.</p><ol><li>Tumis bawang putih sampai harum.</li><li>Masukkan wortel dan kol, lalu sawi.</li><li>Tambahkan air, saus tiram, dan garam, masak sebentar.</li></ol></details>
+<h2>Pertanyaan umum</h2>
+<details><summary>Apakah resepnya gratis?</summary><p>Ya, semua gratis dan tidak perlu daftar.</p></details>
+<details><summary>Berapa porsi tiap resep?</summary><p>Rata-rata untuk 2 sampai 3 orang. Kalikan bahan sesuai jumlah yang makan.</p></details>
+<details><summary>Bagaimana kalau bahannya tidak lengkap?</summary><p>Banyak bumbu bisa diganti. Bawang merah bisa diganti bawang bombai, dan cabai boleh dikurangi atau dihilangkan.</p></details>
+<details><summary>Apakah ada resep untuk anak-anak?</summary><p>Telur dadar, sup ayam, dan sayur bening cocok untuk anak. Kurangi garam dan hindari cabai.</p></details>
+</article></div></div>
+<footer><p>© 2026 Masak Apa Ya</p><p><a href="tentang.html">Tentang</a><a href="kontak.html">Kontak</a><a href="privasi.html">Kebijakan privasi</a></p></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script><script src="js/recipes.js"></script><script src="js/app.js"></script><script src="js/fx.js"></script><script src="js/fx2.js"></script><script src="js/cook.js"></script></body></html>

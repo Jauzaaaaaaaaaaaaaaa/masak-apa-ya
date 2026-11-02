@@ -1,0 +1,36 @@
+/* RESEP MASAK: majalah dapur. Tomat, mentega, krim, kain kotak-kotak, struk warung. */
+body:not(.home) { background: #f6ecd8 !important; }
+h1, h2, h3, .disp { font-variation-settings: "SOFT" 100, "WONK" 1, "opsz" 144; }
+
+/* Layar pembuka: struk menu tercetak */
+.loader { background: #c93a1f; border-radius: 0; color: #2a1710; }
+.loader.done { transform: translateY(-110%); }
+.rcpt { position: relative; width: min(78vw, 300px); padding: 26px 24px 30px; background: #fff8ea; font: 500 13px/1.5 "Courier New", Courier, monospace; text-align: center; animation: rcpt-print 1.5s steps(16) both; transform-origin: top; clip-path: inset(0 0 100% 0); box-shadow: 0 30px 50px -20px rgba(0, 0, 0, .45);
+  --zig: linear-gradient(135deg, #fff8ea 50%, transparent 50%), linear-gradient(225deg, #fff8ea 50%, transparent 50%); }
+.rcpt::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 10px; background: var(--zig); background-size: 14px 14px; }
+.rcpt b { display: block; margin: 8px 0 2px; color: #c93a1f; font: 800 clamp(60px, 15vw, 88px)/1 Fraunces, Georgia, serif; }
+.rcpt p { margin: 0; color: #2a1710; }
+.rcpt hr { border: 0; border-top: 1px dashed #2a1710; margin: 12px 0; }
+.rcpt small { display: flex; justify-content: space-between; }
+@keyframes rcpt-print { to { clip-path: inset(0 0 -20px 0); } }
+
+/* Kursor sendok */
+.cur { border-color: #fff8ea; }
+
+/* Pita kain kotak-kotak */
+.marq { background-color: #c93a1f; background-image: linear-gradient(90deg, rgba(255, 248, 234, .13) 50%, transparent 50%), linear-gradient(rgba(255, 248, 234, .13) 50%, transparent 50%); background-size: 26px 26px; }
+
+/* Tepi lembar bergerigi seperti renda taplak */
+.sheet { border-radius: 0; margin-top: 0; }
+.sheet::before { content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: 18px; background: radial-gradient(circle at 18px 18px, #f6ecd8 17px, transparent 18px); background-size: 36px 18px; background-repeat: repeat-x; }
+
+/* Kartu kalkulator jadi kartu resep */
+.calc { border-width: 1.5px; border-radius: 6px; background-color: #fff8ea; background-image: repeating-linear-gradient(transparent 0 31px, rgba(201, 58, 31, .12) 31px 32px); }
+.calc.in { clip-path: inset(0 round 6px); }
+.calc h2 { color: #c93a1f; }
+.chips button { border-width: 1.5px; border-radius: 6px; }
+.chips button.on { background: #c93a1f; border-color: #c93a1f; color: #fff8ea; }
+.res { background: #f2d6a6; border-radius: 4px; box-shadow: 4px 4px 0 #2a1710; }
+.nav { border-width: 1.5px; background: rgba(255, 248, 234, .9); }
+.btn { border-radius: 8px; letter-spacing: .01em; }
+footer { background: #2a1710; color: #f2d6a6; }
